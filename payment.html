@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm and Pay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+    <div class="logo">Byte-by-Byte</div>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Bookings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1 class="page-title">Confirm and Pay</h1>
+       <div class="payment-methods-container">
+    <div class="tabs">
+        <div class="tab-item active" data-tab="card-payment">Card Payment</div>
+        <div class="tab-item" data-tab="e-wallet-payment">E-Wallet</div>
+    </div>
+    <div class="tab-content-container">
+        <div class="payment-form-card active" id="card-payment">
+            <h3>Payment Information</h3>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="Enter card number" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name" placeholder="Enter name on card" required>
+                </div>
+                <div class="form-group-split">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <button type="submit" class="pay-btn">Pay Now</button>
+            </form>
+        </div>
+        
+        <div class="booking-summary-card">
+            <h3>Booking Summary</h3>
+            <div class="summary-item">
+                <span>Train:</span>
+                <span>Lagos to Ibadan (7:00 AM)</span>
+            </div>
+            <div class="summary-item">
+                <span>Date:</span>
+                <span id="payment-date">August 15, 2025</span>
+            </div>
+            <div class="summary-item">
+                <span>Passengers:</span>
+                <span>2</span>
+            </div>
+            <div class="summary-item">
+                <span>Selected Seats:</span>
+                <span id="payment-seats-list">A1, B2</span>
+            </div>
+            <hr>
+            <div class="summary-item total-price">
+                <span>Total:</span>
+                <span id="payment-total-price">₦ 5,000</span>
+            </div>
+        </div>
+        
+        <div class="payment-form-card" id="e-wallet-payment">
+            <h3>E-Wallet Payment</h3>
+            <p style="text-align: center;">Your current balance: <strong id="ewallet-balance">₦ 0</strong></p>
+            <button id="pay-with-ewallet-btn" class="pay-btn">Pay with E-Wallet</button>
+            <button id="add-funds-btn" class="pay-btn" style="background-color: #28a745;">Add Funds (₦50,000)</button>
+        </div>
+    </div>
+</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Byte by Byte. All rights reserved.</p>
+    </footer>
+    <script src="payment-script.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

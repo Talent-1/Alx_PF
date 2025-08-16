@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Seat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+      <nav>
+    <div class="logo">Byte-by-Byte</div>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Bookings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="page-title">Select Your Seat</h1>
+            <div class="seat-selection-container">
+                <div class="train-car">
+                    <div class="seat-map" id="seat-map">
+                        </div>
+                </div>
+
+                <div class="booking-summary-panel">
+                    <h3>Your Booking</h3>
+                    <div class="seat-legend">
+                        <span class="legend-item"><div class="seat available"></div> Available</span>
+                        <span class="legend-item"><div class="seat selected"></div> Selected</span>
+                        <span class="legend-item"><div class="seat booked"></div> Booked</span>
+                    </div>
+                    <div class="selected-seats-info">
+                        <h4>Selected Seats (<span id="selected-seats-count">0</span>):</h4>
+                        <ul id="selected-seats-list"></ul>
+                    </div>
+                    <div class="booking-price-info">
+                        <h4>Total Price: <span id="total-price">₦ 0</span></h4>
+                    </div>
+                    <a href="#" class="continue-btn" id="continue-btn" style="text-decoration: none;">Continue to Payment</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Byte-by-Byte. All rights reserved.</p>
+    </footer>
+
+    <script src="seat-selection-script.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+  <nav>
+    <div class="logo">Byte-by-Byte</div>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Bookings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+    <section class="container">
+        <h1 class="page-title">Available Trains</h1>
+        <div class="search-summary">
+            <h3>Lagos to Ibadan</h3>
+            <p><strong>Date:</strong> August 15, 2025 | <strong>Passengers:</strong> 2</p>
+        </div>
+
+        <div class="train-list">
+            <div class="train-card">
+                <div class="train-details">
+                    <div class="time-info">
+                        <span class="time">7:00 AM</span>
+                        <span class="route">Lagos <i class="fas fa-long-arrow-alt-right"></i> Ibadan</span>
+                        <span class="time">9:30 AM</span>
+                    </div>
+                    <p class="available-seats">150 seats available</p>
+                </div>
+                <div class="train-action">
+                    <div class="price">
+    <span class="economy-price" style="display: none;">₦ 5,000</span>
+    <span class="first-class-price" style="display: none;">₦ 15,000</span>
+</div>
+                    <a href="seat-selection.html" class="select-btn">Select</a>
+                </div>
+
+            </div>
+
+            <div class="train-card">
+                <div class="train-details">
+                    <div class="time-info">
+                        <span class="time">12:00 PM</span>
+                        <span class="route">Lagos <i class="fas fa-long-arrow-alt-right"></i> Ibadan</span>
+                        <span class="time">2:30 PM</span>
+                    </div>
+                    <p class="available-seats">95 seats available</p>
+                </div>
+                <div class="train-action">
+                    <div class="price">
+    <span class="economy-price" style="display: none;">₦ 5,000</span>
+    <span class="first-class-price" style="display: none;">₦ 15,000</span>
+</div>
+                    <a href="seat-selection.html" class="select-btn">Select</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Byte-by-Byte. All rights reserved.</p>
+    </footer>
+<script src="schedule-script.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>
