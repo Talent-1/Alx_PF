@@ -162,7 +162,7 @@ background-image: url('https://th.bing.com/th/id/OIP.rfwJ2-x6tWH43ZKv2Dht5wHaFj?
   color: #001366;
 }
 
-label {
+.form-group label {
     font-weight: bold;
     color: #ffffff;
 }
