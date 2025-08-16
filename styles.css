@@ -432,6 +432,7 @@ footer {
 
 #cancel-ticket-btn {
     display: block;
+    background-color: #dc3545;
     width: 100%;
 }
 
