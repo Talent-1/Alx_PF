@@ -430,6 +430,11 @@ footer {
     background: #001f3f;
 }
 
+#cancel-ticket-btn {
+    display: block;
+    width: 100%;
+}
+
 /* Payment Page Styles */
 .payment-container {
     display: flex;

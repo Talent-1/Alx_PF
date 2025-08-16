@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +11,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
-         <nav>
-    <div class="logo">Byte-by-Byte</div>
-    <div class="hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dashboard.html">Bookings</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
+        <nav>
+            <div class="logo">Byte-by-Byte</div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Bookings</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-       <div class="ticket-container" style="background: #fff; padding: 2rem; margin-top: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h2 style="color: #003366;">E-Ticket for Lagos to Ibadan</h2>
-    <p><strong>Booking Number:</strong> <span id="ticket-booking-number">LIR-XYZ-12345</span></p>
-    <p><strong>Date:</strong> <span id="ticket-date">August 15, 2025</span></p>
-    <p><strong>Departure Time:</strong> <span id="ticket-time">7:00 AM</span></p>
-    <p><strong>Seats:</strong> <span id="ticket-seats">A1, B2</span></p>
-</div>
+        <div class="ticket-container"
+            style="background: #fff; padding: 2rem; margin-top: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: #003366;">E-Ticket for Lagos to Ibadan</h2>
+            <p><strong>Booking Number:</strong> <span id="ticket-booking-number">LIR-XYZ-12345</span></p>
+            <p><strong>Date:</strong> <span id="ticket-date">August 15, 2025</span></p>
+            <p><strong>Departure Time:</strong> <span id="ticket-time">7:00 AM</span></p>
+            <p><strong>Seats:</strong> <span id="ticket-seats">A1, B2</span></p>
+            <button id="cancel-ticket-btn" style="display: block; width: 100%; margin-top: 2rem;"
+                class="cancel-btn">Cancel Ticket</button>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Byte-by-Byte. All rights reserved.</p>
     </footer>
-<script src="e-ticket-script.js"></script>
-<script src="navbar.js"></script>
+    <script src="e-ticket-script.js"></script>
+    <script src="navbar.js"></script>
 </body>
+
 </html>
