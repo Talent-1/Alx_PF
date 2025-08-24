@@ -597,7 +597,7 @@ footer {
     font-size: 0.9rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    display: inline;
+    display: block;
     color: #333;
 }
 /* Dashboard Page Styles */
